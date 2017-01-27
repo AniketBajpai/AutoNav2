@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles
+END
+default.build
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/default.build
+END
+MicrosoftCinemaFocus14.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/MicrosoftCinemaFocus14.txt
+END
+calibration.exe
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/calibration.exe
+END
+CreateCalibrationFromImages.bat
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/CreateCalibrationFromImages.bat
+END
+cameraParams.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/cameraParams.txt
+END
+Calibration.bat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/CalibrationFiles/Calibration.bat
+END

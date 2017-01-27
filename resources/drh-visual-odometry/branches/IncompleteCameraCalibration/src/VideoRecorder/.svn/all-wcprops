@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/app.config
+END
+MainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/MainForm.resx
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/Program.cs
+END
+VideoRecorder.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/VideoRecorder.csproj
+END
+MainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/MainForm.Designer.cs
+END
+MainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VideoRecorder/MainForm.cs
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder
+END
+CheckerBoardBuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/CheckerBoardBuilder.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/Program.cs
+END
+InkScapeSupport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/InkScapeSupport.cs
+END
+Page.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/Page.cs
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/License.txt
+END
+CalibrationGridBuilder.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/43/trunk/src/CalibrationGrid/CalibrationGridBuilder/CalibrationGridBuilder.csproj
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/60/trunk/src/BirdsEyeView.UI
+END
+MainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/43/trunk/src/BirdsEyeView.UI/MainForm.resx
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/43/trunk/src/BirdsEyeView.UI/Program.cs
+END
+MainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/43/trunk/src/BirdsEyeView.UI/MainForm.Designer.cs
+END
+MainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/60/trunk/src/BirdsEyeView.UI/MainForm.cs
+END
+BirdsEyeView.UI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45/trunk/src/BirdsEyeView.UI/BirdsEyeView.UI.csproj
+END

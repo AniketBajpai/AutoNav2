@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/59/trunk/CalibrationFiles
+END
+default.build
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/59/trunk/CalibrationFiles/default.build
+END
+MicrosoftCinemaFocus14.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/7/trunk/CalibrationFiles/MicrosoftCinemaFocus14.txt
+END
+calibration.exe
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/7/trunk/CalibrationFiles/calibration.exe
+END
+CreateCalibrationFromImages.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/CalibrationFiles/CreateCalibrationFromImages.bat
+END
+cameraParams.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/CalibrationFiles/cameraParams.txt
+END
+Calibration.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/59/trunk/CalibrationFiles/Calibration.bat
+END

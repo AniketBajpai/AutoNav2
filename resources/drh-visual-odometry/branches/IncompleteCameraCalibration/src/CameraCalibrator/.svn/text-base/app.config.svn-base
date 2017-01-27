@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<configuration>
+<configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+        <section name="CameraCalibrator.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+</configSections>
+<startup><supportedRuntime version="v2.0.50727"/></startup><userSettings>
+        <CameraCalibrator.Properties.Settings>
+            <setting name="Size" serializeAs="String">
+                <value>0, 0</value>
+            </setting>
+            <setting name="Location" serializeAs="String">
+                <value>0, 0</value>
+            </setting>
+            <setting name="ChessBoardX" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="ChessBoardY" serializeAs="String">
+                <value>8</value>
+            </setting>
+            <setting name="ImagesCount" serializeAs="String">
+                <value>12</value>
+            </setting>
+            <setting name="WaitBetweenCaptures" serializeAs="String">
+                <value>00:00:05</value>
+            </setting>
+        </CameraCalibrator.Properties.Settings>
+    </userSettings>
+</configuration>

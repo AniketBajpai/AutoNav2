@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VisualOdometry/Utilities
+END
+HistoryBuffer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VisualOdometry/Utilities/HistoryBuffer.cs
+END
+CircularBuffer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/VisualOdometry/Utilities/CircularBuffer.cs
+END

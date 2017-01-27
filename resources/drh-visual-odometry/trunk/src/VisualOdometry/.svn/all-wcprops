@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/61/trunk/src/VisualOdometry
+END
+CameraParameters.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/43/trunk/src/VisualOdometry/CameraParameters.cs
+END
+FramesCounter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/43/trunk/src/VisualOdometry/FramesCounter.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/43/trunk/src/VisualOdometry/app.config
+END
+VisualOdometry.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/45/trunk/src/VisualOdometry/VisualOdometry.csproj
+END
+OpticalFlowResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/43/trunk/src/VisualOdometry/OpticalFlowResult.cs
+END
+OpticalFlow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/60/trunk/src/VisualOdometry/OpticalFlow.cs
+END
+PoseEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/43/trunk/src/VisualOdometry/PoseEventArgs.cs
+END
+HistogramBin.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/43/trunk/src/VisualOdometry/HistogramBin.cs
+END
+Angle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/43/trunk/src/VisualOdometry/Angle.cs
+END
+TrackedFeature.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/49/trunk/src/VisualOdometry/TrackedFeature.cs
+END
+OdometerSettings.settings
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/43/trunk/src/VisualOdometry/OdometerSettings.settings
+END
+Histogram.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/43/trunk/src/VisualOdometry/Histogram.cs
+END
+OdometerSettings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/43/trunk/src/VisualOdometry/OdometerSettings.Designer.cs
+END
+OpticalFlowSettings.settings
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/43/trunk/src/VisualOdometry/OpticalFlowSettings.settings
+END
+RobotPath.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/60/trunk/src/VisualOdometry/RobotPath.cs
+END
+VisualOdometer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/61/trunk/src/VisualOdometry/VisualOdometer.cs
+END
+OpticalFlowSettings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/43/trunk/src/VisualOdometry/OpticalFlowSettings.Designer.cs
+END
+TranslationAnalyzer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/43/trunk/src/VisualOdometry/TranslationAnalyzer.cs
+END
+RotationAnalyzer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/49/trunk/src/VisualOdometry/RotationAnalyzer.cs
+END
+Pose.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/43/trunk/src/VisualOdometry/Pose.cs
+END

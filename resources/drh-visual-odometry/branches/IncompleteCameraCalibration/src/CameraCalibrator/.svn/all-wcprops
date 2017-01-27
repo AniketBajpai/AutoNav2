@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator
+END
+CaptureDialogModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureDialogModel.cs
+END
+CalibratorForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibratorForm.cs
+END
+CalibrateDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrateDialog.cs
+END
+MainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/MainForm.Designer.cs
+END
+CalibrationParametersForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrationParametersForm.resx
+END
+CaptureSettingsDialog.resx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureSettingsDialog.resx
+END
+CalibrationParametersFormModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrationParametersFormModel.cs
+END
+CaptureDialog.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureDialog.Designer.cs
+END
+CalibratorState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibratorState.cs
+END
+CaptureDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureDialog.cs
+END
+CaptureSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureSettings.cs
+END
+MainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/MainForm.resx
+END
+CalibratorFormModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibratorFormModel.cs
+END
+CalibrateDialogModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrateDialogModel.cs
+END
+CalibrationParametersForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrationParametersForm.Designer.cs
+END
+CalibrationParametersForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrationParametersForm.cs
+END
+CaptureSettingsDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureSettingsDialog.cs
+END
+CalibratorForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibratorForm.Designer.cs
+END
+MainModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/MainModel.cs
+END
+CalibrateDialog.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrateDialog.Designer.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/Program.cs
+END
+MainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/MainForm.cs
+END
+TestForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/TestForm.resx
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/app.config
+END
+CalibratorForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibratorForm.resx
+END
+CalibrateDialog.resx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CalibrateDialog.resx
+END
+TestFormModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/TestFormModel.cs
+END
+CameraCalibrator.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CameraCalibrator.csproj
+END
+CaptureDialog.resx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureDialog.resx
+END
+TestForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/TestForm.Designer.cs
+END
+CaptureSettingsDialog.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/CaptureSettingsDialog.Designer.cs
+END
+TestForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibrator/TestForm.cs
+END

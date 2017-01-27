@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/61/trunk/src/VisualOdometry.UI
+END
+MapForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/49/trunk/src/VisualOdometry.UI/MapForm.Designer.cs
+END
+MapForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/60/trunk/src/VisualOdometry.UI/MapForm.cs
+END
+RotationAnalysisForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/RotationAnalysisForm.resx
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/Program.cs
+END
+MainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/60/trunk/src/VisualOdometry.UI/MainForm.Designer.cs
+END
+AuxiliaryViewsForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/AuxiliaryViewsForm.Designer.cs
+END
+MainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/61/trunk/src/VisualOdometry.UI/MainForm.cs
+END
+AuxiliaryViewsForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/AuxiliaryViewsForm.cs
+END
+MapForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/MapForm.resx
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/app.config
+END
+MainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/MainForm.resx
+END
+AuxiliaryViewsForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/AuxiliaryViewsForm.resx
+END
+RotationAnalysisForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/49/trunk/src/VisualOdometry.UI/RotationAnalysisForm.Designer.cs
+END
+RotationAnalysisForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/43/trunk/src/VisualOdometry.UI/RotationAnalysisForm.cs
+END
+VisualOdometry.UI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/45/trunk/src/VisualOdometry.UI/VisualOdometry.UI.csproj
+END

@@ -1,0 +1,89 @@
+10
+
+dir
+61
+http://drh-visual-odometry.googlecode.com/svn/trunk/src
+http://drh-visual-odometry.googlecode.com/svn
+
+
+
+2010-08-22T18:58:26.391782Z
+61
+rainer.hessmer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38d7aa61-b10b-63a5-20ab-7551e83da41b
+
+BirdsEyeView.UI
+dir
+
+CalibrationGrid
+dir
+
+Playground.UI
+dir
+
+VisualOdometry.sln
+file
+
+
+
+
+2016-02-17T08:03:12.645255Z
+64e7bee97d4e8f165d18eeb4280caaee
+2010-08-11T05:52:47.997805Z
+48
+rainer.hessmer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8552
+
+VisualOdometry.UI
+dir
+
+OpticalFlow
+dir
+
+Playground
+dir
+
+Vision.WinFormSupport
+dir
+
+VisualOdometry
+dir
+
+CameraCalibration.Support
+dir
+

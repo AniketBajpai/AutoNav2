@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibration.Support
+END
+IntrinsicParametersSupport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibration.Support/IntrinsicParametersSupport.cs
+END
+ChessBoard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibration.Support/ChessBoard.cs
+END
+HomographyMatrixSupport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibration.Support/HomographyMatrixSupport.cs
+END
+CameraCalibrator.Support.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/46/branches/IncompleteCameraCalibration/src/CameraCalibration.Support/CameraCalibrator.Support.csproj
+END

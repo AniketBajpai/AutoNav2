@@ -1,0 +1,104 @@
+10
+
+dir
+61
+http://drh-visual-odometry.googlecode.com/svn/branches/IncompleteCameraCalibration/src
+http://drh-visual-odometry.googlecode.com/svn
+
+
+
+2010-08-11T05:43:17.489022Z
+45
+rainer.hessmer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38d7aa61-b10b-63a5-20ab-7551e83da41b
+
+CameraCalibrator
+dir
+
+VideoRecorder
+dir
+
+CalibrationGrid
+dir
+
+CameraCalibrator.Tester
+dir
+
+Playground.UI
+dir
+
+VisualOdometry.UI
+dir
+
+CameraModelEstimation
+dir
+
+CameraCalibration.Support
+dir
+
+BirdsEyeView.UI
+dir
+
+VisualOdometry.sln
+file
+
+
+
+
+2016-02-17T08:03:15.957220Z
+5695ef64127f815777f580c79c3d05cb
+2010-08-11T05:02:32.327312Z
+43
+rainer.hessmer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13565
+
+OpticalFlow
+dir
+
+Vision.WinFormSupport
+dir
+
+Playground
+dir
+
+CameraCalibrator.WinForm.Support
+dir
+
+VisualOdometry
+dir
+

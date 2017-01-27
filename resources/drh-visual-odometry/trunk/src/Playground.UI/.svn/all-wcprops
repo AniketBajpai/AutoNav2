@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/43/trunk/src/Playground.UI
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/43/trunk/src/Playground.UI/Program.cs
+END
+Data.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/43/trunk/src/Playground.UI/Data.cs
+END
+Playground.UI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/43/trunk/src/Playground.UI/Playground.UI.csproj
+END
+MapForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/43/trunk/src/Playground.UI/MapForm.resx
+END
+HistogramChartHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/43/trunk/src/Playground.UI/HistogramChartHelper.cs
+END
+MapForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/43/trunk/src/Playground.UI/MapForm.Designer.cs
+END
+Form1.resx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/43/trunk/src/Playground.UI/Form1.resx
+END
+MapForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/43/trunk/src/Playground.UI/MapForm.cs
+END
+Form1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/43/trunk/src/Playground.UI/Form1.Designer.cs
+END
+Form1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/43/trunk/src/Playground.UI/Form1.cs
+END
