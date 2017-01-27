@@ -1,0 +1,13 @@
+build/
+bin/
+lib/
+share/
+output/
+Samples/
+*.mp4
+*.jpg
+*.png
+*.pyc
+*.o
+*.old
+.rlog
