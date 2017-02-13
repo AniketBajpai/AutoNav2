@@ -38,6 +38,12 @@ const int CHUNK_MAX = UPDATE_FREQ;		// Max number of keyframes in a chunk
 const bool DUMP_CORRES = false; // Check to dump correspondances into directory
 const int windows_size = 5;
 
+inline float get_median(vector<float>& v) {
+	size_t n = v.size() / 2;
+    nth_element(v.begin(), v.begin()+n, v.end());
+    return v[n];
+}
+
 int main(int argc, char const *argv[]) {
 	cout << "Start" << endl;
 
@@ -249,21 +255,27 @@ int main(int argc, char const *argv[]) {
 				}
 			}
 			// Trajectory calculation
-			vector<pair<float, float> > trajectory;	// Store trajectory of tracked points
-			pair<float, float> track[UPDATE_FREQ];
+			vector<float> trajectory_x, trajectory_y;
+			float track_x[UPDATE_FREQ], track_y[UPDATE_FREQ];
 			for(uint point_id: compressed.unique_id) {
 				for(uint j = 0; j < UPDATE_FREQ-1; j++) {
 					float x_displacement = point_map[j+1][point_id].x - point_map[j][point_id].x;
 					float y_displacement = point_map[j+1][point_id].y - point_map[j][point_id].y;
-					track[j+1] = make_pair(x_displacement, y_displacement);
+					line(frames[j], point_map[j][point_id], point_map[j+1][point_id], Scalar(0,255,0));
+					track_x[j+1] = x_displacement;
+					track_y[j+1] = y_displacement;
 				}
 
 				// TODO: look for better heuristic
-				float delta_x = track[UPDATE_FREQ-1].first - track[1].first;
-				float delta_y = track[UPDATE_FREQ-1].second - track[1].second;
-				trajectory.push_back(make_pair(delta_x, delta_y));
+				trajectory_x.push_back(track_x[UPDATE_FREQ-1] - track_x[1]);
+				trajectory_y.push_back(track_y[UPDATE_FREQ-1] - track_y[1]);
 			}
-			assert(trajectory.size() == compressed.unique_id.size());
+			assert(trajectory_x.size() == compressed.unique_id.size());
+			assert(trajectory_y.size() == compressed.unique_id.size());
+			float delta_x = get_median(trajectory_x);
+			float delta_y = get_median(trajectory_y);
+			cout << "Median: ";
+			cout << delta_x << ", " << delta_y << endl;
 
 			int frame_write_id = framid-UPDATE_FREQ+1;
 			for(Mat frame: frames){

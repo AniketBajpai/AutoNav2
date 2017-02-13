@@ -11,5 +11,6 @@ processed/
 *.png
 *.pyc
 *.o
+*.gch
 *.old
 .rlog
