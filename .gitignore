@@ -4,6 +4,8 @@ lib/
 share/
 output/
 Samples/
+data/
+processed/
 *.mp4
 *.jpg
 *.png

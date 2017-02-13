@@ -53,7 +53,7 @@ int main(int argc, char const *argv[]) {
 	vector<uchar> status, status_inverse; // status of optical ow matches
 	vector<float> err;                    // errors in optical flow matches
 	vector<int> siftids;                  // stores unique id's for feature points
-	// vector<unordered_map<int, Point2f> > point_map;		// maps id's to points for each frame
+	vector<unordered_map<int, Point2f> > point_map;		// maps id's to points for each frame
 	int siftlatest=0;
 	int cx = 640, cy = 512;
 	int rc = 0;
@@ -79,7 +79,7 @@ int main(int argc, char const *argv[]) {
 		// read frame
 		cap.read(rawFrame);
 		if (rawFrame.empty()) { // check for empty frame
-			cout << "Empty frame" << rc << endl;
+			cout << "Empty frame " << rc << endl;
 			if (rc>20)  // break after 20 empty frames - feed stopped
 				break;
 			rc++;
@@ -99,7 +99,7 @@ int main(int argc, char const *argv[]) {
 		cvtColor(rawFrame, newFrame, CV_BGR2GRAY);
 		cout << "On frame id: " << framid << " and tracking " << corners.size() << " points" << endl;
 
-		// unordered_map<int, Point2f> curr_point_map;
+		unordered_map<int, Point2f> curr_point_map;
 
 		if (framid == 0) {    // Initial frame
 			newFrame.copyTo(oldFrame);
@@ -115,14 +115,16 @@ int main(int argc, char const *argv[]) {
 			siftids = vector<int> ();
 			for (uint i=siftlatest; i<siftlatest+corners_prev.size(); i++) {
 				siftids.push_back(i);
-				// curr_point_map[i] = corners_prev[i-siftlatest];
 			}
 			for (uint i=0; i<corners_prev.size(); i++) {
+				curr_point_map[i] = corners_prev[i];
 				colors.push_back(rawFrame.at<Vec3b>(corners_prev[i]));
 			}
 			siftlatest = siftlatest+corners_prev.size();
+			cout << "Latest id: " << siftlatest << endl;
 			prevframid = framid;
 			// imwrite(PROCESSED_DIR + "img_" + to_string(framid) + ".jpg", rawFrame);
+			point_map.push_back(curr_point_map);
 			frames.push_back(rawFrame);
 			framid++;
 			continue;
@@ -171,15 +173,15 @@ int main(int argc, char const *argv[]) {
 					temp_colors.push_back(colors[i]);
 					corners_prev.push_back(corners[i]);
 					newsiftids.push_back(siftids[i]);
+					curr_point_map[siftids[i]] = corners[i];
 				}
 			}
 			colors = temp_colors;
 			siftids = newsiftids;
 			assert(siftids.size() == corners_prev.size());
 			assert(siftids.size() == colors.size());
+			assert(siftids.size() == curr_point_map.size());
 		}
-
-		// point_map.push_back(curr_point_map);		// map for current frame
 
 		// Recompute feature points every N frames
 		if (((framid+1) % UPDATE_FREQ == 0) || (corners_prev.size() < min_corners)) {
@@ -192,16 +194,19 @@ int main(int argc, char const *argv[]) {
 			corners_prev.insert(corners_prev.end(), newcorners.begin(), newcorners.end());
 			for (uint i=0; i<newcorners.size(); i++) {
 				colors.push_back(rawFrame.at<Vec3b> (newcorners[i]));
+				curr_point_map[i+siftlatest] = newcorners[i];
 			}
 			// Assign new id's to feature points
 			for (uint i=siftlatest; i<siftlatest+newcorners.size(); i++) {
 				siftids.push_back(i);
-				// curr_point_map[i] = corners_prev[i-siftlatest];
 			}
 			siftlatest = siftlatest+newcorners.size();
 			assert(colors.size() == siftids.size());
 			assert(colors.size() == corners_prev.size());
+			assert(colors.size() == curr_point_map.size());
 		}
+
+		point_map.push_back(curr_point_map);		// map for current frame
 
 		// Draw feature points on image
 		// for (uint i=0; i<corners_prev.size(); i++) {
@@ -226,28 +231,47 @@ int main(int argc, char const *argv[]) {
 			compressed = all_corr[batch_num*CHUNK_MAX-1];
 		}
 		else {
+			assert(all_corr.size() == framid);
 			compressed = CompressCorr(compressed, all_corr[framid-1]);
 		}
 
 		if((framid+1) % UPDATE_FREQ == 0) {			// Processing at end of interval
-			cout << "Frames size:" << frames.size() << endl;
 			assert(frames.size() == UPDATE_FREQ-1);
-			// assert(point_map.size() == UPDATE_FREQ-1);
-			for(uint j = 0; j <= framid - batch_num*UPDATE_FREQ; j++){
+			assert(point_map.size() == UPDATE_FREQ);
+
+			for(uint j = 0; j < UPDATE_FREQ-1; j++) {
 				for(uint point_id: compressed.unique_id) {
-					// Calculate trajectory using point_map[j][point_id]
+					assert(point_map[j].find(point_id) != point_map[j].end());	// Point id in point map
+
 
 					// Draw tracked points on frames
-					// circle(frames[j], point_map[j][point_id], 4, Scalar(0, 0, 255), -1);
+					circle(frames[j], point_map[j][point_id], 4, Scalar(0, 0, 255), -1);
 				}
 			}
+			// Trajectory calculation
+			vector<pair<float, float> > trajectory;	// Store trajectory of tracked points
+			pair<float, float> track[UPDATE_FREQ];
+			for(uint point_id: compressed.unique_id) {
+				for(uint j = 0; j < UPDATE_FREQ-1; j++) {
+					float x_displacement = point_map[j+1][point_id].x - point_map[j][point_id].x;
+					float y_displacement = point_map[j+1][point_id].y - point_map[j][point_id].y;
+					track[j+1] = make_pair(x_displacement, y_displacement);
+				}
+
+				// TODO: look for better heuristic
+				float delta_x = track[UPDATE_FREQ-1].first - track[1].first;
+				float delta_y = track[UPDATE_FREQ-1].second - track[1].second;
+				trajectory.push_back(make_pair(delta_x, delta_y));
+			}
+			assert(trajectory.size() == compressed.unique_id.size());
+
 			int frame_write_id = framid-UPDATE_FREQ+1;
 			for(Mat frame: frames){
-				imwrite(PROCESSED_DIR + "img_"+to_string(frame_write_id)+".jpg", frame);
+				imwrite(PROCESSED_DIR + "img_"+to_string(frame_write_id+1)+".jpg", frame);
 				frame_write_id++;
 			}
 			frames.clear();
-			// point_map.clear();
+			point_map.clear();
 			batch_num++;
 		}
 		else {				// Mid interval operations
@@ -256,6 +280,7 @@ int main(int argc, char const *argv[]) {
 
 		prevframid = framid;
 		framid++;
+
 	}
 
 	return 0;
