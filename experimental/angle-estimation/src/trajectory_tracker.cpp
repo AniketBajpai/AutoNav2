@@ -14,7 +14,7 @@ using namespace cv;
 
 /* Config */
 // constants
-const string VIDEO_PATH = "../data/testv1.mp4";
+const string VIDEO_PATH = "../data/testv3.mp4";
 const string PROCESSED_DIR = "../processed/";
 const int UPDATE_FREQ = 10;
 const int min_corners = 10000;
@@ -245,15 +245,19 @@ int main(int argc, char const *argv[]) {
 			assert(frames.size() == UPDATE_FREQ-1);
 			assert(point_map.size() == UPDATE_FREQ);
 
+			Mat final_frame = frames[frames.size()-1];
 			for(uint j = 0; j < UPDATE_FREQ-1; j++) {
 				for(uint point_id: compressed.unique_id) {
 					assert(point_map[j].find(point_id) != point_map[j].end());	// Point id in point map
 
-
 					// Draw tracked points on frames
-					circle(frames[j], point_map[j][point_id], 4, Scalar(0, 0, 255), -1);
+					// circle(frames[j], point_map[j][point_id], 4, Scalar(0, 0, 255), -1);
 				}
 			}
+			for(uint point_id: compressed.unique_id) {
+				circle(final_frame, point_map[UPDATE_FREQ-1][point_id], 4, Scalar(0, 0, 255), -1);
+			}
+
 			// Trajectory calculation
 			vector<float> trajectory_x, trajectory_y;
 			float track_x[UPDATE_FREQ], track_y[UPDATE_FREQ];
@@ -261,7 +265,8 @@ int main(int argc, char const *argv[]) {
 				for(uint j = 0; j < UPDATE_FREQ-1; j++) {
 					float x_displacement = point_map[j+1][point_id].x - point_map[j][point_id].x;
 					float y_displacement = point_map[j+1][point_id].y - point_map[j][point_id].y;
-					line(frames[j], point_map[j][point_id], point_map[j+1][point_id], Scalar(0,255,0));
+					// line(frames[j], point_map[j][point_id], point_map[j+1][point_id], Scalar(0,255,0));
+					line(final_frame, point_map[j][point_id], point_map[j+1][point_id], Scalar(0,255,0));
 					track_x[j+1] = x_displacement;
 					track_y[j+1] = y_displacement;
 				}
@@ -278,10 +283,12 @@ int main(int argc, char const *argv[]) {
 			cout << delta_x << ", " << delta_y << endl;
 
 			int frame_write_id = framid-UPDATE_FREQ+1;
-			for(Mat frame: frames){
-				imwrite(PROCESSED_DIR + "img_"+to_string(frame_write_id+1)+".jpg", frame);
-				frame_write_id++;
-			}
+			// for(Mat frame: frames){
+			// 	imwrite(PROCESSED_DIR + "img_"+to_string(frame_write_id+1)+".jpg", frame);
+			// 	frame_write_id++;
+			// }
+			imwrite(PROCESSED_DIR + "img_final_"+to_string(frame_write_id+1)+".jpg", final_frame);
+
 			frames.clear();
 			point_map.clear();
 			batch_num++;
