@@ -31,3 +31,9 @@ def getYaw():
         raise
     except:
         traceback.print_exc()
+
+
+if __name__ == '__main__':
+    initsocket()
+    while True:
+        print getYaw()
