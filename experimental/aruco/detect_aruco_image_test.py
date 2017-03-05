@@ -30,12 +30,12 @@ if __name__ == '__main__':
 
     markerdetector = aruco.MarkerDetector()
     camparam = aruco.CameraParameters()
-    camparam.readFromXMLFile("cam_params_flycap.yml")\
+    camparam.readFromXMLFile("../cam-calibration/cam_params_flycap.yml")
 
     marker_size = 0.165
 
     # Load an color image in grayscale
-    img = cv2.imread('5.png', cv2.IMREAD_COLOR)
+    img = cv2.imread('/home/piyush/Desktop/Testing/aruco-images/images/5.png', cv2.IMREAD_COLOR)
 
     markers = markerdetector.detect(img, camparam)
     print "Markers detected", len(markers)

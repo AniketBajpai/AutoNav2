@@ -28,11 +28,11 @@ def main():
     print "Done."
 
     counter = 0
-    N = 40
+    N = 20
     while (True):
         if(counter % N == 0):
             frame = camera.GrabNumPyImage('bgr')
-            imagename = './obstacle-detection/floor-video/images/' + str(counter/N).zfill(4)
+            imagename = './road-data2/' + str(counter/N).zfill(5)
             cv2.imwrite(imagename + ".jpg", frame)
         counter += 1
 
