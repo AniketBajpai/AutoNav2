@@ -86,6 +86,7 @@ def stopBot():
     cmd.stop()
     cmd.stop()
     cmd.stop()
+    time.sleep(1)
 
 
 def moveDistance(direction, distance):
@@ -140,27 +141,29 @@ def moveTowardsXY(x,y):
 def rotate(angle):
     """
     angle -> signed double value in degrees
-    positive for right
+    positive for left
     """
 
     sign = lambda a: (a > 0) - (a < 0)
     direction = -1*sign(angle)
-    angle = abs(angle)
-    angleDelta = abs(0.3*angle)
+    angleDelta = abs(0.2*angle)
     intensity = 0.5
     DELAY_DURATION = 0.05
 
     initYaw = mc.getYaw()
     finalYaw = initYaw + angle
-    print "Init",initYaw
-    print "finalYaw",finalYaw
+    print "Init", initYaw
+    print "finalYaw", finalYaw
     cmd.forward(speed=BOT_SPEED)
+    turn(float(intensity*direction))
+    turn(float(intensity*direction))
+    turn(float(intensity*direction))
+    turn(float(intensity*direction))
     while(True):
         yaw = mc.getYaw()
         print yaw
         if(abs(finalYaw - yaw) < angleDelta):
             break
-        turn(float(intensity*direction))
         # time.sleep(DELAY_DURATION)
 
 
