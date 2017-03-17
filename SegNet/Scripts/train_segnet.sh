@@ -1,0 +1,2 @@
+ # /home/aman/AutoNav2/SegNet/caffe-segnet/build/tools/caffe train -gpu 0 -solver /home/aman/AutoNav2/SegNet/Models/segnet_solver.prototxt -weights /home/aman/AutoNav2/SegNet/Models/VGG_ILSVRC_16_layers.caffemodel
+ /home/aman/AutoNav2/SegNet/caffe-segnet/build/tools/caffe train -gpu 0 -solver /home/aman/AutoNav2/SegNet/Models/segnet_solver.prototxt -weights /home/aman/AutoNav2/SegNet/Models/Training/segnet_iter_8000.caffemodel
