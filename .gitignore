@@ -7,8 +7,11 @@ Samples/
 data/
 processed/
 *.mp4
+*.avi
 *.jpg
 *.png
+*.caffemodel
+*.solverstate
 *.pyc
 *.o
 *.gch

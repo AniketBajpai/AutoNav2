@@ -45,7 +45,7 @@ if __name__ == '__main__':
         #     print i, point
 
         marker.calculateExtrinsics(marker_size, camparam)
-        # print "Id:", marker.id
+        print "Id:", marker.id
         # print "Rvec:\n", marker.Rvec
         # print "Tvec:\n", marker.Tvec
         # print "Rotation Matrix: "
