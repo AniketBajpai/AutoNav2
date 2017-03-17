@@ -1,9 +1,9 @@
 import socket, traceback
 import netifaces as ni
 import math
-import Queue
 import threading
 import time
+import Queue
 
 host = ni.ifaddresses('wlan0')[2][0]['addr']
 #print ip  # should print "192.168.100.37
@@ -12,7 +12,6 @@ host = ni.ifaddresses('wlan0')[2][0]['addr']
 port = 3400
 
 s = None
-q = Queue.LifoQueue()
 
 def initsocket():
     global s
@@ -20,13 +19,9 @@ def initsocket():
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
     s.bind((host, port))
-
-    t = threading.Thread(target=storeYaw, args=(q, 0))
-    t.daemon = True
-    t.start()
     return s
 
-def storeYaw(q, shit):
+def getYaw(q, shit):
     global s
     while True:
         try:
@@ -39,11 +34,13 @@ def storeYaw(q, shit):
         except:
             traceback.print_exc()
 
-def getYaw():
-    return q.get()
+q = Queue.LifoQueue()
+initsocket()
+t = threading.Thread(target=getYaw, args=(q, 0))
+t.daemon = True
+t.start()
 
-# if __name__ == '__main__':
-#     initsocket()
-#     while True:
-#         time.sleep(0.2)
-#         print getYaw()
+while True:
+    print "loop"
+    print q.get()
+    time.sleep(0.2)

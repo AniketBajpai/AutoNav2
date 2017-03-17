@@ -33,17 +33,20 @@ double findZAngle(TwoViewInfo& twoview_info) {
     return z_angle;
 }
 
+// Undistort
+const string CALIB_CONFIG_PATH = "../src/calib_results_flycap.txt";
+
 // Input -> image1 image2
 int main(int argc, char const *argv[]) {
     /* Config */
     // Undistort
-    std::string s = "../undistort/calib_results_flycap.txt";
-    FishOcam f;
-    f.init(s);
-    cout << "Focal length is " << f.focal << "\n";
-    cout << "Width is " << f.wout << "\n";
-    cout << "Hout is " << f.hout << "\n";
-    Size S = Size(f.wout, f.hout);
+    FishOcam cam_model;        // Camera model parameters for distortion
+	cam_model.init(CALIB_CONFIG_PATH);
+    const float focal = cam_model.focal;
+    // cout << "Focal length is " << cam_model.focal << "\n";
+    // cout << "Width is " << cam_model.wout << "\n";
+    // cout << "Hout is " << cam_model.hout << "\n";
+    // Size S = Size(cam_model.wout, cam_model.hout);
 
     // Feature detection
     const int maxCorners = 1000;
@@ -59,18 +62,22 @@ int main(int argc, char const *argv[]) {
     options.min_num_inlier_matches = 10;
     options.estimate_twoview_info_options.max_sampson_error_pixels = 2.25;
 
+    cout << "Completed Initialization" << endl;
+
     // Read input images
     Mat image1 = imread(argv[1], CV_LOAD_IMAGE_COLOR);
     Mat image2 = imread(argv[2], CV_LOAD_IMAGE_COLOR);
     assert(image1.cols == image2.cols);
     assert(image1.rows == image2.rows);
-    center = Point2f((float)f.wout/2, (float)f.hout/2);
+    center = Point2f((float)cam_model.wout/2, (float)cam_model.hout/2);
 
     // Undistort input images
     Mat image1_un;
     Mat image2_un;
-    f.WarpImage(image1, image1_un);
-    f.WarpImage(image2, image2_un);
+    cam_model.WarpImage(image1, image1_un);
+    cam_model.WarpImage(image2, image2_un);
+
+    cout << "Read and undistorted images" << endl;
 
     // Find feature points in images
     Mat image1_gray, image2_gray;
@@ -104,7 +111,8 @@ int main(int argc, char const *argv[]) {
     }
     TwoViewInfo twoview_info;
     vector<int> inliers;    // indices of matching points in vector
-    if (GetEssentialRT(frameCorrespondence, twoview_info, inliers, options, f.focal)) {
+    if (GetEssentialRT(frameCorrespondence, twoview_info, inliers, options, focal)) {
+        cout << "No. of inliers: " << inliers.size() << endl;
         printTransformation(twoview_info);
         double angle_turned = findZAngle(twoview_info);
         cout << "Angle turned: " << angle_turned << endl;
@@ -115,6 +123,7 @@ int main(int argc, char const *argv[]) {
 
     // Clear feature point vectors
     features1.clear(); features2.clear();
+    inliers.clear();
 
     return 0;
 }

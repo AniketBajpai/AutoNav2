@@ -7,7 +7,7 @@ import time
 if __name__ == '__main__':
     # load camera parameters
     camparam = aruco.CameraParameters()
-    camparam.readFromXMLFile("cam_params_flycap.yml")
+    camparam.readFromXMLFile("../cam-calibration/cam_params_flycap.yml")
 
     # Aruco marker size
     marker_size = 0.17

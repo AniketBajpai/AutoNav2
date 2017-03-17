@@ -32,7 +32,7 @@ def main():
     while (True):
         if(counter % N == 0):
             frame = camera.GrabNumPyImage('bgr')
-            imagename = '../angle-estimation/data/v3/' + str(counter/N).zfill(5)
+            imagename = './road-data2/' + str(counter/N).zfill(5)
             cv2.imwrite(imagename + ".jpg", frame)
         counter += 1
 
